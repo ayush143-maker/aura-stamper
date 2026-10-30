@@ -1,6 +1,6 @@
 # aura-stamper
 
-This repository is a minimal note-only snapshot. Its root contains `hi.txt`; no application entry point, package manifest, or build configuration is present.
+This repository is a minimal note-only snapshot. Its only other known root file is `hi.txt`; no application entry point, package manifest, or build configuration is present.
 
 ## Current state
 
