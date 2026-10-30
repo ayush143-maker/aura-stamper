@@ -8,20 +8,22 @@ Open `hi.txt` to view the note. After editing it, reopen the file and compare it
 
 ## Manual review checklist
 
-These actions apply to the note in this repository; a page layout review is not applicable to the known files. They are review steps, not verified results.
+These are review steps, not verified results. The known files do not establish a rendered page or an asset-loading workflow.
 
-- Open `hi.txt` and review the complete text, including any whitespace or line breaks relevant to the edit.
-- If you add a file reference to the note, check that the referenced path matches the file's location.
-- Do not treat this repository as having a browser entry page or narrow and wide layouts unless those are added and documented.
+- [ ] Review the complete text in `hi.txt`, including whitespace and line breaks relevant to the edit.
+- [ ] If the note or a later consumer references a local image, audio file, or font, check that the path matches the file's location and that the file exists.
+- [ ] If assets are added, identify which ones are actually referenced and remove only files confirmed to be unused. Consider whether large media files are necessary before adding them.
+- [ ] If an external font or script is introduced, confirm that it is intentional and document its purpose; do not infer a dependency from the note alone.
+- [ ] Do not treat this repository as having a browser entry page or responsive layouts unless those are added and documented.
 
 ## Accessibility review checklist
 
-The listed files do not establish a rendered page or interactive controls, so keyboard and visual-interface checks do not currently apply to this repository. If `hi.txt` is later displayed in an app or website, review that consuming interface before making accessibility claims:
+The listed files do not establish a rendered page or interactive controls, so interface accessibility checks do not currently apply to the known files. If `hi.txt` is later displayed in an app or website, review that consuming interface before making accessibility claims:
 
-- Check that any controls surrounding the note can be reached and operated with a keyboard, with a visible focus indicator.
-- Check that controls have meaningful labels, and that the note's text remains readable with sufficient contrast against its background.
-- If images are added, check that informative images have suitable text alternatives and decorative images are treated appropriately.
-- If the interface uses animation or motion, check that it respects the user's reduced-motion preference.
+- Check that controls surrounding the note can be reached and operated with a keyboard, with visible focus.
+- Check that controls have meaningful labels and that the note remains readable against its background.
+- If images are added, check that informative images have suitable text alternatives and decorative images are handled appropriately.
+- If the interface uses motion, check that it respects the user's reduced-motion preference.
 
 ## Personalization
 
