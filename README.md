@@ -8,12 +8,12 @@ Open `hi.txt` to view or edit the note. Reopen it afterward to compare the conte
 
 ## Troubleshooting
 
-Use these as diagnostic steps, not as reports of known problems:
+These are diagnostic steps, not reports of known problems:
 
 1. Confirm what you intend to review: `hi.txt` is the note; there is no documented browser entry page in the listed files.
 2. If a consuming application displays the note, check that application's actual entry page and the path it uses to locate `hi.txt`. Preserve relative paths when files are moved, and update references deliberately.
 3. If the consuming page fails to display the note, inspect that application's browser console and Network panel for errors and failed requests.
-4. Check that any local assets referenced by the consuming application exist at the referenced paths. Treat remote resources separately: they require network access and are not established by this repository's known files.
+4. Check that local assets referenced by a consuming application exist at their referenced paths. Treat remote resources separately: they require network access and are not established by this repository's known files.
 
 ## Configuration and data handling
 
@@ -21,19 +21,20 @@ The known files do not include an environment template or configuration file. Tr
 
 If configuration or a preview application is added later, document its actual settings and handling requirements. Keep real secrets out of tracked files; use placeholders in any future template and check ignore rules for local secret-bearing files. Do not infer that a configuration mechanism is already supported.
 
-## Manual review checklist
+## Contributing and handoff
 
-These are review steps, not verified results. The known files do not establish a rendered page or asset-loading workflow.
+Keep changes scoped to the intended note content in `hi.txt`. Preserve the existing filename and any relative references; if a file is moved or renamed, update the references that depend on it. In a handoff, describe what changed and identify the affected file. Do not describe an application preview or rendering result unless one was actually reviewed.
 
-- [ ] Review the complete text in `hi.txt`, including relevant whitespace and line breaks.
-- [ ] If the note or a later consumer references a local image, audio file, or font, check that the path matches the file's location and that the file exists.
-- [ ] If assets are added, identify which are actually referenced before removing any; consider whether large media is necessary.
-- [ ] If an external font or script is introduced, confirm that it is intentional and document its purpose.
-- [ ] Do not treat this repository as having a browser entry page or responsive layouts unless those are added and documented.
+Before publishing, manually review the result. These are actions to perform, not verified results:
 
-## Accessibility review checklist
+- Review the complete text in `hi.txt`, including relevant whitespace and line breaks.
+- Check that any local image, audio file, or font referenced by the note or a consuming application exists at the referenced path.
+- If assets are added, identify which are actually referenced before removing any. If an external font or script is introduced, confirm it is intentional and describe its purpose in the handoff.
+- Confirm the handoff description matches the final changes and that filenames and relative references remain valid.
 
-The listed files do not establish a rendered page or interactive controls. If `hi.txt` is later displayed in an app or website, review that consuming interface:
+## If a consuming interface is added
+
+The listed files do not establish a rendered page or interactive controls. If `hi.txt` is displayed in an app or website, review that consuming interface separately:
 
 - Check that controls are keyboard reachable and operable, with visible focus.
 - Check that controls have meaningful labels and the note remains readable against its background.
