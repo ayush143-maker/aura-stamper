@@ -6,6 +6,12 @@ This is a minimal, note-only repository. Its known root files are `README.md` an
 
 Open `hi.txt` to view the note. After editing it, reopen the file and compare its content with the intended change. No application preview procedure is established by the listed files.
 
+## Configuration and data handling
+
+The known files do not include an environment template or configuration file. Treat `hi.txt` as tracked repository content: do not put passwords, private keys, personal records, or other information that should not be shared in it. Anyone with access to the repository may be able to read tracked content.
+
+If configuration or a preview application is added later, document its actual settings and handling requirements. Keep real secrets out of tracked files; if a template is added, use placeholders rather than live values and check ignore rules for any local secret-bearing files. Do not infer that a particular configuration mechanism is already supported.
+
 ## Manual review checklist
 
 These are review steps, not verified results. The known files do not establish a rendered page or an asset-loading workflow.
