@@ -4,4 +4,4 @@ This repository is a minimal note-only snapshot. Its known root files are `READM
 
 ## Current state
 
-There is no verified install or run command. Open `hi.txt` to view the note in the repository.
+There is no verified install or run command. Open `hi.txt` to view the note in the repository. When editing it, reopen the file to review the change; no application preview procedure is established.
