@@ -55,3 +55,8 @@ The listed files do not establish a rendered page or interactive controls. If `h
 ## Personalization
 
 For changes to the note's visible content, edit `hi.txt`. No theme, image assets, or application-specific settings are established by the listed files. If you add files or a preview workflow, document their purpose, identify the actual root and output locations if applicable, and preserve relative file references introduced by that change.
+
+## Final release review
+
+- Confirm the documented starting point still matches the files present at the repository root.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
