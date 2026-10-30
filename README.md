@@ -16,6 +16,16 @@ These are review steps, not verified results. The known files do not establish a
 - [ ] If an external font or script is introduced, confirm that it is intentional and document its purpose; do not infer a dependency from the note alone.
 - [ ] Do not treat this repository as having a browser entry page or responsive layouts unless those are added and documented.
 
+## Browser and platform reliability checklist
+
+No browser-rendered page or browser-testing procedure is established by the known files. These checks apply only if `hi.txt` is later displayed through a consuming application; they are review steps, not verified results.
+
+- [ ] Identify the consuming application's actual browser and platform requirements, then review it in current browsers relevant to its stack. Do not infer browser compatibility from the note itself.
+- [ ] In the consuming page, inspect the browser console and Network panel for errors when loading or displaying the note.
+- [ ] Check every referenced local asset path against the consumer's file layout. For remote assets, confirm that the intended URL is present and inspect failed requests; the note alone establishes no remote dependencies.
+- [ ] Compare the consuming page at mobile and desktop viewport sizes, checking that the note remains readable and any surrounding controls remain usable.
+- [ ] Record findings separately from this checklist; do not describe the experience as tested until those reviews have been performed.
+
 ## Accessibility review checklist
 
 The listed files do not establish a rendered page or interactive controls, so interface accessibility checks do not currently apply to the known files. If `hi.txt` is later displayed in an app or website, review that consuming interface before making accessibility claims:
