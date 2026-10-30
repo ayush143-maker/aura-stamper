@@ -1,15 +1,11 @@
 # aura-stamper
 
-This repository currently contains a single hi.txt file and no identifiable application entry point. This README records the current state without inventing build steps.
+This repository is currently a minimal note-only snapshot. Its root contains hi.txt, but no application entry point, package manifest, or build configuration is present yet.
 
-## Status
+## Current state
 
-No application run command can be verified from the current root files. Review the listed files before integrating this repository into a larger project.
+There is no verified install or run command to document. Open hi.txt to see the file currently stored in the repository.
 
-## Repository scope
+## Next steps
 
-The files currently present do not establish a reliable application launch command. This README records the repository state without assuming a framework or build process that is not visible.
-
-## Suggested next steps
-
-Review the current files and commit history to determine the intended role of the repository. If runnable source is added, document the runtime, dependency installation, required configuration, launch command, and a repeatable test.
+When the project gains application code, add a clear entry point and document the framework, dependencies, and local development commands here. Until then, this README deliberately describes only what is present rather than guessing the intended product or build process.
